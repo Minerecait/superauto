@@ -1,5 +1,7 @@
-body {
+html, body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; /* Жестко запрещает сайту разъезжаться вправо на телефонах */
+    max-width: 100vw;
 }
 
 /* Фон главного экрана в стиле бокса автосервиса */
@@ -19,4 +21,17 @@ body {
     transform: translateY(-5px);
     border-color: #facc15;
     box-shadow: 0 12px 30px -10px rgba(250, 204, 21, 0.15);
+}
+
+/* Идеальная адаптация под экраны телефонов (iPhone / Android) */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.75rem !important; /* Уменьшаем заголовок, чтобы длинные слова влезали */
+        line-height: 1.25 !important;
+        overflow-wrap: break-word;
+    }
+    h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
 }
