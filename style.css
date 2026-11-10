@@ -1,0 +1,22 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Фон главного экрана в стиле бокса автосервиса */
+.hero-bg {
+    background-image: linear-gradient(to right, rgba(9, 9, 11, 0.96) 35%, rgba(9, 9, 11, 0.75) 100%), 
+                      url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Плавная анимация карточек при наведении */
+.service-card {
+    transition: all 0.25s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #facc15;
+    box-shadow: 0 12px 30px -10px rgba(250, 204, 21, 0.15);
+}
